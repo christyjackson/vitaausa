@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+
+		<!-- theme css --> 
+	<link href="assets/css/structure.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/card.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+	<!-- carousel css -->
+	<link href="assets/js/lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+
+	<!-- author -->
+	<meta name="author" content="Lucid Themes">
+	<!-- responsive meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+
+	<!-- google fonts used -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+	<style>
+		body {
+			background-color: #333;
+			margin: 0px;
+		}
+		.ul{
+		background-color: #333;
+		color: white;
+		width: 100%;
+		display: inline-block;
+		padding: 10px 20px;
+		/*box-shadow: 0px 25px 15px 0px #0052d6;*/
+		text-align: center;
+		z-index: 100;
+		overflow: hidden;
+
+		/*width: 100%; */
+	}
+	.ul li {
+		font-size: 22px;
+		display: inline-block;
+		/*float: left;*/
+/*		background-color: #333;
+*/		padding: 6px 45px;
+		border-bottom: 1px solid #333;
+		/*position: relative;*/
+	}
+	.ul li a {
+		text-decoration: none;
+		color: white;
+		z-index: -1;
+	}
+	.ul li:hover {
+		transition: 0.25s;
+		border-bottom: 1px solid white;
+		cursor: pointer;
+	}
+	.ul .icon {
+		display: none;
+	}
+
+	
+
+	.ul .margin {
+		margin: 0 10%;
+	}
+	.ul li .disabled:hover{
+		border: 1px solid transparent;
+		cursor: alias;
+	}
+	.featured-slide h2 {
+		font-size: 300%;
+		font-weight: 500%;
+	}
+		.gallery_box {
+			background-color: #333;
+			height: auto;
+			padding: 40px;
+			height: 1650px;
+			width: 100%;
+			margin-left: 20px;
+			text-align: center;
+		}
+		.gallery img {
+			width: 100%;
+			width: 300px;
+			height: 350px;
+			float: left;
+			border: 0px solid red;
+			border-radius: 6px;
+			margin: 20px;
+			box-shadow: 0px 2px 10px 4px white;
+		}
+		.gallery img:hover {
+			box-shadow: 0px 2px 10px 4px yellow;
+			transition: 0.2s;
+			cursor: pointer;
+		}
+		.g_box {
+			background-color: #333;
+			width: 100%;
+			text-align: center;
+		}
+		.btn {
+			border-radius: 4px;
+			border: 0px solid #333;
+			font-size: 20px;
+			padding: 5px 10px;
+			margin: 0 3px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			$("#id1").show();
+			$("#id2").show();
+			$("#id3").show();
+
+			$("#b1").click(function(){
+				$("#id1").show(300);
+				$("#id2").hide(300);
+				$("#id3").hide(300);
+				$("#id4").show(300);
+				$("#id5").hide(300);
+				$("#id6").hide(300);
+				$("#id7").show(300);
+				$("#id8").hide(300);
+				$("#id9").hide(300);
+				$("#id10").show(300);
+			});
+
+			$("#b2").click(function(){
+				$("#id2").show(300);
+				$("#id1").hide(300);
+				$("#id3").hide(300);
+				$("#id5").show(300);
+				$("#id6").hide(300);
+				$("#id7").hide(300);
+				$("#id8").show(300);
+				$("#id1").hide(300);
+				$("#id10").hide(300);
+				$("#id9").show(300);
+			});
+
+			$("#b3").click(function(){
+				$("#id3").show(300);
+				$("#id1").hide(300);
+				$("#id2").hide(300);
+				$("#id6").show(300);
+				$("#id8").hide(300);
+				$("#id10").hide(300);
+				$("#id4").show(300);
+				$("#id5").hide(300);
+				$("#id8").hide(300);
+				$("#id9").show(300);
+			});
+
+			$("#b4").click(function(){
+				$("#id3").show(300);
+				$("#id1").show(300);
+				$("#id2").show(300);
+				$("#id4").show(300);
+				$("#id5").show(300);
+				$("#id6").show(300);
+				$("#id7").show(300);
+				$("#id8").show(300);
+				$("#id9").show(300);
+				$("#id10").show(300);
+			});
+
+
+		})
+	</script>
+</head>
+<body  style="font-family: Segoe UI">
+
+
+<div>
+	<div class="ul" style="background-color: transparent;width:100%;height:150px;margin:0px;padding: 0px 0px 10px 0px;position: fixed;">
+
+		<img src="VITAAlogo.png" style="width:7%;position:absolute;left:49.7%">
+
+		<div style="width:100%;background-color: #333;margin:0px; padding: 0 0 10px 0">
+			<li><a href="index-narrow1.html">Home</a></li>
+			<li><a href="about-2-header.html">About Us</a></li>
+			<li><a href="chapter.html">Chapters</a></li>
+			<li><a href="activity.html">Activity</a></li>
+			<li><a href="#" style="width:100px"> </a></li>
+			<!-- <li><a href="#"> </a></li> -->
+			<li><a href="Gallery.html">Gallery</a></li>
+			<li><a href="office_bearers.html">Office Bearers</a></li>
+			<li><a href="contact-2.html">Contact Us</a></li> 
+		</div>
+<!-- 
+		<li style="float: right;margin-right: 11%;"><a href="#">Contact</a></li>
+		<li style="float: right;"><a href="#">Carrer</a></li>
+		<li style="float: right;"><a href="#">Office Bearers</a></li>
+		<li style="float: right;"><a href="#">Gallery</a></li> -->
+	</div>	
+</div>
+
+
+<BR><BR><BR><BR><BR><BR>
+	<center>
+
+<!-- <h1>VITAA GALLERY</h1> -->
+
+
+<div class="g_box">
+<BR>
+	<div>
+		<input type="button" name="btn3" value="All" id="b4" class="btn">
+		<input type="button" name="btn1" value="Inauguration" id="b1" class="btn">
+		<input type="button" name="btn2" value="Meeting" id="b2" class="btn">
+		<input type="button" name="btn3" value="Group Snaps" id="b3" class="btn">
+	</div>
+	
+	<div class="gallery_box">
+		<center>
+		<div class="gallery" id="id1">
+			<img src="assets/img/f1.jpeg">
+		</div>
+		<div class="gallery" id="id2">
+			<img src="assets/img/cc1.jpg">
+		</div>
+		<div class="gallery" id="id3">
+			<img src="assets/img/ny2.jpg">
+		</div>
+		<div class="gallery" id="id4">
+			<img src="assets/img/ny.jpg">
+		</div>
+		<div class="gallery" id="id5">
+			<img src="assets/img/mch3.jpg">
+		</div>
+		<div class="gallery" id="id6">
+			<img src="assets/img/slider3.jpg">
+		</div>
+		<div class="gallery" id="id7">
+			<img src="assets/img/vitaa2.png">
+		</div>
+		<div class="gallery" id="id8">
+			<img src="assets/img/cc2.jpg">
+		</div>
+		<div class="gallery" id="id9">
+			<img src="assets/img/vitaa11.png">
+		</div>
+		<div class="gallery" id="id10">
+			<img src="assets/img/slider2.jpg">
+		</div>
+		<div class="gallery" id="id11">
+			<img src="assets/img/la.jpg">
+		</div>
+		<div class="gallery" id="id12">
+			<img src="assets/img/california.jpg">
+		</div>
+		<div class="gallery" id="id12">
+			<img src="assets/img/vitaa5.png">
+		</div>
+		<div class="gallery" id="id12">
+			<img src="assets/img/vit6.png">
+		</div>
+		<div class="gallery" id="id12">
+			<img src="assets/img/vitaa7.jpg">
+		</div>
+		</center>
+	</div>
+
+</div>
+
+</center>
+
+<footer>
+
+	<div class="footer-main edge-padding">
+		<div class="footer-main-inside">
+			<div class="container clearfix">
+			
+				<!-- footer top content -->
+				<div class="footer-top">
+					<div class="row">
+					
+						<!-- footer about text section -->
+						<div class="col-xlarge-4 col-medium-12">
+							<div class="footer-about-section">
+								<h4 class="font-reg">About</h4>
+								<div class="page-content">
+									<p align="justify">
+										The VITAA (VIT Alumni Association) network has several National and International chapters, and the network continues to spread.
+											<br>
+										The International chapters function from U.S.A. (Washington DC, New Jersey & New York, California, Atlanta, Boston, Texas, Chicago, Los Angeles, Arizona, Minnesota, Carolinas, Michigan, Connecticut, Ohio, Missouri and Dallas), U.A.E., Australia (Sydney & Melbourne), Germany, Singapore, Malaysia, Oman (Muscat), Qatar (Doha), Rwanda, UK, Canada, Sweden and Ireland.</p>
+								</div>
+							</div>
+						</div>
+						
+						<!-- footer latest blog posts section -->
+						<div class="col-xlarge-4 col-medium-6">
+							<div class="footer-posts-section">
+								<h4 class="font-reg">Related Links</h4>
+								<div class="sidebar-widget font-reg widget_tag_cloud">
+										<div class="tagcloud">
+												<ul class="font-reg">
+														<li><a href="http://vitaa.org/">VITAA</a></li>
+														<li><a href="http://www.vit.ac.in">VIT Vellore</a></li>
+														<li><a href="http://chennai.vit.ac.in">VIT Chennai</a></li>
+														<li><a href="http://vitbhopal.ac.in">VIT Bhopal</a></li>
+														<li><a href="http://vitap.ac.in">VIT Amaravati</a></li>
+														
+												</ul>
+											
+										</div>
+								</div>	
+							</div>
+						</div>
+			
+						<div class="col-xlarge-4 col-medium-6">
+								<div class="footer-posts-section">
+									<img src="assets/img/VIT new logo.png" style="width:80%; height:80%;">
+									<div class="sidebar-widget font-reg widget_tag_cloud">
+											
+											<div class="tagcloud">
+													
+															<h5>Vellore: Near Katpadi Road, Vellore, TamilNadu 632014<br>|Tel: +91 416 220 2125|</h5>
+															<h5>Chennai: Vandalur-Kelambakkam Road, Chennai, TamilNadu<br>|Tel: +91 44 3993 1555|</h5>
+															<h5>Bhopal: Bhopal-Indore Highway, Kothrikalan, Sehore, Madhya Pradesh<br>|Tel: +91 75 6025 4500/501/502|</h5>
+															<h5>Andhra Pradesh: Inavolu, beside AP Secretariat, Amaravati-522237<br>|Tel: +91 863 2370444/7901091283|</h5>
+
+											</div> 
+									</div>	
+								</div>
+						</div>
+					
+					</div>
+				</div>
+				
+				<div class="footer-bottom clearfix">
+					<p class="font-reg">© 2018 a <a href="http://https://www.facebook.com/csharma111" target="_blank">chirag sharma production</a></p>
+	
+					<div id="scroll-top">
+						<span class="fa fa-angle-up"></span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+</footer>
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/lib/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>
