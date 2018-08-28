@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gallery</title>
+
+		<!-- theme css --> 
+	<link href="assets/css/structure.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/card.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+	<!-- carousel css -->
+	<link href="assets/js/lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+
+	<!-- author -->
+	<meta name="author" content="Lucid Themes">
+	<!-- responsive meta tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+
+	<!-- google fonts used -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+	<style>
+
+		.ul{
+		background-color: #333;
+		color: white;
+		width: 100%;
+		display: inline-block;
+		padding: 10px 20px;
+		/*box-shadow: 0px 25px 15px 0px #0052d6;*/
+		text-align: center;
+		z-index: 100;
+		overflow: hidden;
+
+		/*width: 100%; */
+	}
+	.ul li {
+		font-size: 22px;
+		display: inline-block;
+		/*float: left;*/
+/*		background-color: #333;
+*/		padding: 6px 45px;
+		border-bottom: 1px solid #333;
+		/*position: relative;*/
+	}
+	.ul li a {
+		text-decoration: none;
+		color: white;
+		z-index: -1;
+	}
+	.ul li:hover {
+		transition: 0.25s;
+		border-bottom: 1px solid white;
+		cursor: pointer;
+	}
+	.ul .icon {
+		display: none;
+	}
+
+	
+
+	.ul .margin {
+		margin: 0 10%;
+	}
+	.ul li .disabled:hover{
+		border: 1px solid transparent;
+		cursor: alias;
+	}
+	.featured-slide h2 {
+		font-size: 300%;
+		font-weight: 500%;
+	}
+		.gallery_box {
+			background-color: #333;
+			height: auto;
+			padding: 40px 20px;
+			height: 1200px;
+			width: 100%;
+			text-align: center;
+		}
+		.gallery img {
+			width: 100%;
+			width: 300px;
+			height: 350px;
+			float: left;
+			border: 0px solid red;
+			border-radius: 6px;
+			margin: 20px;
+			box-shadow: 0px 2px 10px 4px white;
+		}
+		.gallery img:hover {
+			box-shadow: 0px 2px 10px 4px yellow;
+			transition: 0.2s;
+			cursor: pointer;
+		}
+		.g_box {
+			background-color: #333;
+			width: 100%;
+			text-align: center;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			$("#id1").show();
+			$("#id2").show();
+			$("#id3").show();
+
+			$("#b1").click(function(){
+				$("#id1").show(300);
+				$("#id2").hide(300);
+				$("#id3").hide(300);
+				$("#id4").show(300);
+				$("#id5").hide(300);
+				$("#id6").hide(300);
+				$("#id7").show(300);
+				$("#id8").hide(300);
+				$("#id9").hide(300);
+				$("#id10").show(300);
+			});
+
+			$("#b2").click(function(){
+				$("#id2").show(300);
+				$("#id1").hide(300);
+				$("#id3").hide(300);
+				$("#id5").show(300);
+				$("#id6").hide(300);
+				$("#id7").hide(300);
+				$("#id8").show(300);
+				$("#id1").hide(300);
+				$("#id10").hide(300);
+				$("#id9").show(300);
+			});
+
+			$("#b3").click(function(){
+				$("#id3").show(300);
+				$("#id1").hide(300);
+				$("#id2").hide(300);
+				$("#id6").show(300);
+				$("#id8").hide(300);
+				$("#id10").hide(300);
+				$("#id4").show(300);
+				$("#id5").hide(300);
+				$("#id8").hide(300);
+				$("#id9").show(300);
+			});
+
+			$("#b4").click(function(){
+				$("#id3").show(300);
+				$("#id1").show(300);
+				$("#id2").show(300);
+				$("#id4").show(300);
+				$("#id5").show(300);
+				$("#id6").show(300);
+				$("#id7").show(300);
+				$("#id8").show(300);
+				$("#id9").show(300);
+				$("#id10").show(300);
+			});
+
+
+		})
+	</script>
+</head>
+<body>
+	<center>
+<div>
+	<input type="button" name="btn3" value="All" id="b4">
+	<input type="button" name="btn1" value="Caption America" id="b1">
+	<input type="button" name="btn2" value="Stark" id="b2">
+	<input type="button" name="btn3" value="Scarlett Johansson" id="b3">
+
+</div>
+<div class="g_box">
+	
+	<div class="gallery_box">
+		<center>
+		<div class="gallery" id="id1">
+			<img src="assets/img/f1.jpeg">
+		</div>
+		<div class="gallery" id="id2">
+			<img src="assets/img/cc1.jpg">
+		</div>
+		<div class="gallery" id="id3">
+			<img src="assets/img/ny2.jpg">
+		</div>
+		<div class="gallery" id="id4">
+			<img src="assets/img/ny.jpg">
+		</div>
+		<div class="gallery" id="id5">
+			<img src="assets/img/mch3.jpg">
+		</div>
+		<div class="gallery" id="id6">
+			<img src="assets/img/slider3.jpg">
+		</div>
+		<div class="gallery" id="id7">
+			<img src="assets/img/vitaa2.png">
+		</div>
+		<div class="gallery" id="id8">
+			<img src="assets/img/cc2.jpg">
+		</div>
+		<div class="gallery" id="id9">
+			<img src="assets/img/vitaa11.png">
+		</div>
+		<div class="gallery" id="id10">
+			<img src="assets/img/slider2.jpg">
+		</div>
+		<div class="gallery" id="id11">
+			<img src="assets/img/la.jpg">
+		</div>
+		<div class="gallery" id="id12">
+			<img src="assets/img/california.jpg">
+		</div>
+		<div class="gallery" id="id12">
+			<img src="assets/img/vitaa5.png">
+		</div>
+		<div class="gallery" id="id12">
+			<img src="assets/img/vit6.png">
+		</div>
+		<div class="gallery" id="id12">
+			<img src="assets/img/vitaa7.jpg">
+		</div>
+		</center>
+	</div>
+
+</div>
+
+</center>
+</body>
+</html>
