@@ -5,6 +5,33 @@
 <!-- page title -->
 <title>VITAA - Office Bearers</title>
 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link href="assets/css/structure.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/card.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+<!-- carousel css -->
+<link href="assets/js/lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+
+<!-- author -->
+<meta name="author" content="Lucid Themes">
+<!-- responsive meta tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+
+<!-- google fonts used -->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 <!-- theme css --> 
 <link href="assets/css/structure.css" rel="stylesheet" type="text/css" />
@@ -41,18 +68,24 @@
 		/*width: 100%; */
 	}
 	.ul li {
-		font-size: 0.0001px;
+		/*font-size: 0.0001px;*/
+		width: 14%;
 		display: inline-block;
 		/*float: left;*/
 /*		background-color: #333;
-*/		padding: 6px 45px;
+*/
+		/*padding: 6px 45px;*/
+		/*padding: 0;*/
 		border-bottom: 1px solid #333;
+		display: inline-block;
+		list-style-type: none;
 		/*position: relative;*/
 	}
 	.ul li a {
 		text-decoration: none;
 		color: white;
 		z-index: -1;
+		padding: 0;
 	}
 	.ul li:hover {
 		transition: 0.25s;
@@ -125,7 +158,7 @@
 		}
 		.card {
 		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-		  max-width: 300px;
+		  max-width: 350px;
 		  margin: auto;
 		  text-align: center;
 		  font-family: arial;
@@ -164,8 +197,73 @@
 			margin: 20px 0;
 		}
 
+		.ul{
+		background-color: #333;
+		color: white;
+		width: 100%;
+		display: inline-block;
+		padding: 10px 20px;
+		/*box-shadow: 0px 25px 15px 0px #0052d6;*/
+		text-align: center;
+		z-index: 100;
+		overflow: hidden;
 
+		/*width: 100%; */
+	}
+	.ul li {
+		font-size: 22px;
+		display: inline-block;
+		/*float: left;*/
+/*		background-color: #333;
+*/		padding: 6px 45px;
+		border-bottom: 1px solid #333;
+		/*position: relative;*/
+	}
+	.ul li a {
+		text-decoration: none;
+		color: white;
+		z-index: -1;
+	}
+	.ul li:hover {
+		transition: 0.25s;
+		border-bottom: 1px solid white;
+		cursor: pointer;
+	}
+	.ul .icon {
+		display: none;
+	}
+
+	
+
+	.ul .margin {
+		margin: 0 10%;
+	}
+	.ul li .disabled:hover{
+		border: 1px solid transparent;
+		cursor: alias;
+	}
+	.featured-slide h2 {
+		font-size: 300%;
+		font-weight: 500%;
+	}
 }
+	#myNavbar ul{
+		color: white;
+		position: fixed;
+		border-bottom: 1px solid #333;
+
+	}
+	#myNavbar ul li:hover {
+		border-bottom: 1px solid white;
+		transition: 0.2s;
+	}
+	#btn1:hover {
+		/*background-color: white;*/
+		/*border: 1px solid red;*/
+	}
+	.nav ul li{
+		width: 25%;
+	}
 </style>
 
 </head>
@@ -173,7 +271,64 @@
 
 <body style="font-family: Segoe UI">
 
-<div>
+<nav class="navbar navbar-inverse navbar-fixed-top" style="padding: 5px 0px;z-index: 1001">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
+    </div>
+    <div class="collapse navbar-collapse nav nav-justified" id="myNavbar">
+    	<!-- <img src="VITAAlogo.png" style="width:7%;position:absolute;left:49%"> -->
+      <ul class="nav navbar-nav" style="font-size: 18px;padding: 5px 5px;width: 100%;text-align: center;" >
+		
+		<li><a href="index.html" style="color: white;padding: 10px 30px;">Home</a></li>
+        <li><a href="activity.html" style="color: white;padding: 10px 30px;">Activity</a></li>
+        <li><a href="chapter.html" style="color: white;padding: 10px 30px;">Chapters</a></li>
+        <li><a href="office_bearers.html" style="color: white;padding: 10px 30px;">Office Bearers</a></li>
+		<img src="VITAAlogo.png" style="width:7%;position:absolute;left: 46%">
+	</ul>
+	
+      <!-- <ul class="nav navbar-nav navbar-right"  style="font-size: 23px;">
+			
+      	 <li><a href="office_bearers.html" style="color: white;">Office Bearers</a></li> -->
+        <!-- <li><a href="about-2-header.html" style="color: white;">About Us</a></li> -->
+        <!-- <li><a href="contact-2.html" style="color: white;">Contact Us</a></li> -->
+      <!-- </ul>  -->
+    </div>
+  </div>
+</nav>
+<br><br><br>
+
+<div class="container" style="background-color: #000000; width: 100%;position: fixed;z-index: 1000">
+  <div class="btn-group btn-group-justified">
+    <div class="btn-group">
+    	<a href="about-2-header.html">
+      		<button type="button" id="btn1" class="btn btn-primary" style="background-color: black;border: 1px solid black;">About Us</button>
+  		</a>
+    </div>
+    <div class="btn-group">
+    	<a href="Gallery.html">
+      		<button type="button" class="btn btn-primary" style="background-color: black;border: 1px solid black;">Gallery</button>
+      	</a>
+    </div>
+    <div class="btn-group">
+    	<a href="News.html">
+      		<button type="button" class="btn btn-primary" style="background-color: black;border: 1px solid black;">News</button>
+    	</a>
+    </div>
+    <div class="btn-group">
+    	<a href="contact-2.html">
+      		<button type="button" class="btn btn-primary" style="background-color: black;border: 1px solid black;">Contact Us</button>
+      	</a>
+    </div>
+  </div>
+</div>
+
+<!-- <div>
 	<div class="ul" style="background-color: transparent;width:100%;height:150px;margin:0px;padding: 0px 0px 10px 0px;position: fixed;">
 
 		<img src="VITAAlogo.png" style="width:7%;position:absolute;left:49.7%">
@@ -182,22 +337,20 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about-2-header.html">About Us</a></li>
 			<li><a href="chapter.html">Chapters</a></li>
-			<li><a href="activity.html">Activity</a></li>
-			<li><a href="#" style="width:100px"> </a></li>
-			<!-- <li><a href="#"> </a></li> -->
+			<li><a href="activity.html">Activity</a></li>			
 			<li><a href="Gallery.html">Gallery</a></li>
 			<li><a href="office_bearers.html">Office Bearers</a></li>
 			<li><a href="contact-2.html">Contact Us</a></li> 
-		</div>
+		</div> -->
 <!-- 
 		<li style="float: right;margin-right: 11%;"><a href="#">Contact</a></li>
 		<li style="float: right;"><a href="#">Carrer</a></li>
 		<li style="float: right;"><a href="#">Office Bearers</a></li>
 		<li style="float: right;"><a href="#">Gallery</a></li> -->
-	</div>	
-</div>
-
-<div id="main-content" class="edge-padding">
+	<!-- </div>	
+</div> -->
+<br><br><br>
+<div id="main-content" class="edge-padding" style="padding: 0; margin: 0;">
 
 	<!-- featured section -->
 	<section class="featured-section featured-narrow" style="height: 400px">
@@ -273,125 +426,71 @@
 	</h1>
 	
 	<br>
-	<div class="card">
-		<img src="assets/img/sj.jpg" alt="SJ" style="width:100%">
-		<h1>John Doe</h1>
-		<p class="title">CEO & Founder, Example</p>
+	<div class="card" style="box-shadow: 0px 2px 10px 4px #aaaaaa;margin-right: 10px;">
+		<img src="assets/img/office11.jpg" style="width:250px;height: 350px;" alt="Aditya Mehta" title="Aditya Mehta">
+		<h1>Aditya Mehta</h1>
+		<!-- <p class="title">Qualification + year</p>
 		<p>Harvard University</p>
-		<div style="margin: 24px 0;">
+		<div style="margin: 20px 0;">
+		    <a href="#"><i class="fa fa-dribbble"></i></a>
+		    <a href="#"><i class="fa fa-twitter"></i></a>
+		    <a href="#"><i class="fa fa-linkedin"></i></a>
+		    <a href="#"><i class="fa fa-facebook"></i></a>
+		</div> -->
+ 		<p>
+ 			<a href="mailto:aditya.mehta2002@vitalum.ac.in"><button>Contact</button></a>
+ 		</p>
+	</div>
+
+	<div class="card" style="box-shadow: 0px 2px 10px 4px #aaaaaa;margin-right: 10px;">
+		<img src="assets/img/office2.png" style="width:250px;height: 350px;" alt="Ravi Raj" title="Ravi Raj">
+		<h1>Ravi Raj</h1>
+		<!-- <p class="title">CEO & Founder, Example</p>
+		<p>Harvard University</p>
+		<div style="margin: 20px 0;">
+		    <a href="#"><i class="fa fa-dribbble"></i></a>
+		    <a href="#"><i class="fa fa-twitter"></i></a>
+		    <a href="#"><i class="fa fa-linkedin"></i></a> 
+		    <a href="#"><i class="fa fa-facebook"></i></a>
+		</div> -->
+ 		<p>
+ 			<a href="mailto:raviraj89@vitalum.ac.in"><button>Contact</button></a>
+ 		</p>
+	</div>
+
+	<div class="card" style="box-shadow: 0px 2px 10px 4px #aaaaaa;"">
+		<img src="assets/img/office3.png" style="width:250px;height: 350px;" alt="Sathish Rajamani" title="Sathish Rajamani">
+		<h1>Sathish Rajamani</h1>
+		<!-- <p class="title">B.E. Mechanical Engg 1996</p>
+		<p>Harvard University</p>
+		<div style="margin: 20px 0;">
 		    <a href="#"><i class="fa fa-dribbble"></i></a> 
 		    <a href="#"><i class="fa fa-twitter"></i></a>  
 		    <a href="#"><i class="fa fa-linkedin"></i></a>  
 		    <a href="#"><i class="fa fa-facebook"></i></a> 
-		</div>
+		</div> -->
  		<p>
- 			<button>Contact</button>
+ 			<a href="mailto:sathish.rajamani1996@vitalum.ac.in"><button>Contact</button></a>
  		</p>
 	</div>
 
-	<div class="card">
-		<img src="assets/img/sj.jpg" alt="SJ" style="width:100%">
-		<h1>John Doe</h1>
-		<p class="title">CEO & Founder, Example</p>
+	<div class="card" style="box-shadow: 0px 2px 10px 4px #aaaaaa;">
+		<img src="assets/img/siva1.jpg" style="width:250px;height: 320px;">
+		<h1>Ramachandramurthy<br> Sivakumar</h1>
+		<!-- <p class="title">B.E. Mechanical Engg 1996</p>
 		<p>Harvard University</p>
-		<div style="margin: 24px 0;">
+		<div style="margin: 20px 0;">
 		    <a href="#"><i class="fa fa-dribbble"></i></a> 
 		    <a href="#"><i class="fa fa-twitter"></i></a>  
 		    <a href="#"><i class="fa fa-linkedin"></i></a>  
 		    <a href="#"><i class="fa fa-facebook"></i></a> 
-		</div>
+		</div> -->
  		<p>
- 			<button>Contact</button>
+ 			<a href="mailto:sivakumar_rsk@yahoo.com"><button>Contact</button></a>
  		</p>
 	</div>
 
-	<div class="card">
-		<img src="assets/img/sj.jpg" alt="SJ" style="width:100%">
-		<h1>John Doe</h1>
-		<p class="title">CEO & Founder, Example</p>
-		<p>Harvard University</p>
-		<div style="margin: 24px 0;">
-		    <a href="#"><i class="fa fa-dribbble"></i></a> 
-		    <a href="#"><i class="fa fa-twitter"></i></a>  
-		    <a href="#"><i class="fa fa-linkedin"></i></a>  
-		    <a href="#"><i class="fa fa-facebook"></i></a> 
-		</div>
- 		<p>
- 			<button>Contact</button>
- 		</p>
-	</div>
-
-	<h1>
-		Core Committee Members
-	</h1>
-
-	<div class="card">
-		<img src="assets/img/sj.jpg" alt="SJ" style="width:100%">
-		<h1>John Doe</h1>
-		<p class="title">CEO & Founder, Example</p>
-		<p>Harvard University</p>
-		<div style="margin: 24px 0;">
-		    <a href="#"><i class="fa fa-dribbble"></i></a> 
-		    <a href="#"><i class="fa fa-twitter"></i></a>  
-		    <a href="#"><i class="fa fa-linkedin"></i></a>  
-		    <a href="#"><i class="fa fa-facebook"></i></a> 
-		</div>
- 		<p>
- 			<button>Contact</button>
- 		</p>
-	</div>
-
-	<div class="card">
-		<img src="assets/img/sj.jpg" alt="SJ" style="width:100%">
-		<h1>John Doe</h1>
-		<p class="title">CEO & Founder, Example</p>
-		<p>Harvard University</p>
-		<div style="margin: 24px 0;">
-		    <a href="#"><i class="fa fa-dribbble"></i></a> 
-		    <a href="#"><i class="fa fa-twitter"></i></a>  
-		    <a href="#"><i class="fa fa-linkedin"></i></a>  
-		    <a href="#"><i class="fa fa-facebook"></i></a> 
-		</div>
- 		<p>
- 			<button>Contact</button>
- 		</p>
-	</div>
-
-	<h1>
-		Chapter Development & Activity Cell Members
-	</h1>
-
-	<div class="card">
-		<img src="assets/img/sj.jpg" alt="SJ" style="width:100%">
-		<h1>John Doe</h1>
-		<p class="title">CEO & Founder, Example</p>
-		<p>Harvard University</p>
-		<div style="margin: 24px 0;">
-		    <a href="#"><i class="fa fa-dribbble"></i></a> 
-		    <a href="#"><i class="fa fa-twitter"></i></a>  
-		    <a href="#"><i class="fa fa-linkedin"></i></a>  
-		    <a href="#"><i class="fa fa-facebook"></i></a> 
-		</div>
- 		<p>
- 			<button>Contact</button>
- 		</p>
-	</div>
-
-	<div class="card">
-		<img src="assets/img/sj.jpg" alt="SJ" style="width:100%">
-		<h1>John Doe</h1>
-		<p class="title">CEO & Founder, Example</p>
-		<p>Harvard University</p>
-		<div style="margin: 24px 0;">
-		    <a href="#"><i class="fa fa-dribbble"></i></a> 
-		    <a href="#"><i class="fa fa-twitter"></i></a>  
-		    <a href="#"><i class="fa fa-linkedin"></i></a>  
-		    <a href="#"><i class="fa fa-facebook"></i></a> 
-		</div>
- 		<p>
- 			<button>Contact</button>
- 		</p>
-	</div>
+	
 
 	<br><br>
 	<br><br>
@@ -432,14 +531,11 @@
 																<li><a href="http://chennai.vit.ac.in">VIT Chennai</a></li>
 																<li><a href="http://vitbhopal.ac.in">VIT Bhopal</a></li>
 																<li><a href="http://vitap.ac.in">VIT Amaravati</a></li>
-																
 														</ul>
-													
 												</div>
 										</div>
 									</div>
 								</div>
-				
 								<div class="col-xlarge-4 col-medium-6">
 										<div class="footer-posts-section">
 											<img src="assets/img/VIT new logo.png" style="width:80%; height:80%;">

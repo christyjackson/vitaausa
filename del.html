@@ -25,6 +25,7 @@
 <meta name="author" content="Lucid Themes">
 <!-- responsive meta tag -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
 
 <!-- google fonts used -->
 <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
@@ -82,22 +83,18 @@
 		font-weight: 500%;
 	}
 }
-	#myNavbar ul{
+	.navbar ul{
+		/*position: static;*/
+	}
+	.navbar ul li {
 		color: white;
-		position: fixed;
+		position: static;
 		border-bottom: 1px solid #333;
 
 	}
-	#myNavbar ul li:hover {
+	.navbar ul li:hover {
 		border-bottom: 1px solid white;
-		transition: 0.2s;
-	}
-	#btn1:hover {
-		/*background-color: white;*/
-		/*border: 1px solid red;*/
-	}
-	.nav ul li{
-		width: 25%;
+		transition: 0.25s;
 	}
 </style>
 
@@ -106,10 +103,7 @@
 
 <body style="font-family: Segoe UI">
 
-
-
-
-<nav class="navbar navbar-inverse navbar-fixed-top" style="padding: 5px 0px;z-index: 1001">
+<nav class="navbar navbar-inverse" style="margin: 0px;padding: 5px 10px 5px 10px;border-radius: 0px">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -119,52 +113,24 @@
       </button>
       <!-- <a class="navbar-brand" href="#">WebSiteName</a> -->
     </div>
-    <div class="collapse navbar-collapse nav nav-justified" id="myNavbar">
-    	<!-- <img src="VITAAlogo.png" style="width:7%;position:absolute;left:49%"> -->
-      <ul class="nav navbar-nav" style="font-size: 22px;padding: 5px 5px;width: 100%;text-align: center;" >
-		
-		<li><a href="index.html" style="color: white;padding: 10px 30px;">Home</a></li>
-        <li><a href="activity.html" style="color: white;padding: 10px 30px;">Activity</a></li>
-        <li><a href="chapter.html" style="color: white;padding: 10px 30px;">Chapters</a></li>
-        <li><a href="office_bearers.html" style="color: white;padding: 10px 30px;">Office Bearers</a></li>
-		<img src="VITAAlogo.png" style="width:7%;position:absolute;left: 46%">
-	</ul>
-	
-      <!-- <ul class="nav navbar-nav navbar-right"  style="font-size: 23px;">
-			
-      	 <li><a href="office_bearers.html" style="color: white;">Office Bearers</a></li> -->
-        <!-- <li><a href="about-2-header.html" style="color: white;">About Us</a></li> -->
-        <!-- <li><a href="contact-2.html" style="color: white;">Contact Us</a></li> -->
-      <!-- </ul>  -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+    	<img src="VITAAlogo.png" style="width:7%;position:absolute;left:51%">
+      <ul class="nav navbar-nav" style="font-size: 25px;">
+        <li style="margin-left: 20px;"><a href="index.html">Home</a></li>
+        <li style="margin-left: 20px;"><a href="activity.html">Activity</a></li>
+        <li style="margin-left: 20px;"><a href="chapter.html">Chapters</a></li>
+        <li style="margin-left: 20px;"><a href="Gallery.html">Gallery</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right"  style="font-size: 23px;color:white;">
+      	<li><a href="office_bearers.html">Office Bearers</a></li>
+        <li><a href="about-2-header.html">About Us</a></li>
+        <li><a href="contact-2.html">Contact Us</a></li>
+      </ul>
     </div>
   </div>
 </nav>
-<br><br><br>
 
-<div class="container" style="background-color: #000000; width: 100%;position: fixed;z-index: 1000">
-  <div class="btn-group btn-group-justified">
-    <div class="btn-group">
-    	<a href="about-2-header.html">
-      		<button type="button" id="btn1" class="btn btn-primary" style="background-color: black;border: 1px solid black;">About Us</button>
-  		</a>
-    </div>
-    <div class="btn-group">
-    	<a href="Gallery.html">
-      		<button type="button" class="btn btn-primary" style="background-color: black;border: 1px solid black;">Gallery</button>
-      	</a>
-    </div>
-    <div class="btn-group">
-    	<a href="News.html">
-      		<button type="button" class="btn btn-primary" style="background-color: black;border: 1px solid black;">News</button>
-    	</a>
-    </div>
-    <div class="btn-group">
-    	<a href="contact-2.html">
-      		<button type="button" class="btn btn-primary" style="background-color: black;border: 1px solid black;">Contact Us</button>
-      	</a>
-    </div>
-  </div>
-</div>
 <!-- <div>
 	<div class="ul" style="background-color: transparent;width:100%;height:300px;margin:0px;padding: 0px 0px 10px 0px;position: fixed;">
 
@@ -181,8 +147,8 @@
 		</div>
 	</div>	
 </div> -->
-<br><br><br>
-<div id="main-content" class="edge-padding" style="margin: 0;padding: 0;">
+
+<div id="main-content" class="edge-padding">
 
 	<!-- featured section -->
 	<section class="featured-section featured-narrow" style="height: 400px">
