@@ -1,39 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>VITAA - Gallery</title>
 
-		<!-- theme css --> 
+<!-- page title -->
+<title>VITAA - Web Development Team</title>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href="assets/css/structure.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/card.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
-	<link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
-	<!-- carousel css -->
-	<link href="assets/js/lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<!-- author -->
-	<meta name="author" content="Lucid Themes">
-	<!-- responsive meta tag -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta charset="UTF-8">
+<link href="assets/css/structure.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/card.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+<!-- carousel css -->
+<link href="assets/js/lib/owl-carousel/owl.carousel.css" rel="stylesheet">
 
-	<!-- google fonts used -->
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<!-- author -->
+<meta name="author" content="Lucid Themes">
+<!-- responsive meta tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+
+<!-- google fonts used -->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+<!-- theme css --> 
+<link href="assets/css/structure.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/card.css" rel="stylesheet" type="text/css">
+<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+<!-- carousel css -->
+<link href="assets/js/lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+
+<!-- author -->
+<meta name="author" content="Lucid Themes">
+<!-- responsive meta tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+
+<!-- google fonts used -->
+<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 
-	<style>
-		body {
-			background-color: #ffffff;
-			margin: 0px;
-		}
-		.ul{
+<style type="text/css">
+	.ul{
 		background-color: #333;
 		color: white;
 		width: 100%;
@@ -43,21 +64,28 @@
 		text-align: center;
 		z-index: 100;
 		overflow: hidden;
+
 		/*width: 100%; */
 	}
 	.ul li {
-		font-size: 22px;
+		/*font-size: 0.0001px;*/
+		width: 14%;
 		display: inline-block;
 		/*float: left;*/
 /*		background-color: #333;
-*/		padding: 6px 45px;
+*/
+		/*padding: 6px 45px;*/
+		/*padding: 0;*/
 		border-bottom: 1px solid #333;
+		display: inline-block;
+		list-style-type: none;
 		/*position: relative;*/
 	}
 	.ul li a {
 		text-decoration: none;
 		color: white;
 		z-index: -1;
+		padding: 0;
 	}
 	.ul li:hover {
 		transition: 0.25s;
@@ -67,6 +95,7 @@
 	.ul .icon {
 		display: none;
 	}
+
 	.ul .margin {
 		margin: 0 10%;
 	}
@@ -78,43 +107,96 @@
 		font-size: 300%;
 		font-weight: 500%;
 	}
-		.gallery_box {
-			background-color: #333;
-			height: auto;
-			padding: 40px;
-			/*height: 1650px;*/
-			height: 100%;
-			width: 100%;
-			margin-left: 20px;
+
+		.table {
+			width: 80%;
+			/*background-color: #f8f8f8;*/
+			font-size: 16px;
+			margin-bottom: 40px; 
+			/*border: 1px solid #333;*/
+			/*border-collapse: collapse;*/
 			text-align: center;
 		}
-		.gallery img {
-			width: 100%;
-			width: 350px;
-			height: 350px;
-			float: left;
-			border: 0px solid red;
-			/*border-radius: 6px;*/
-			margin: 20px;
-			box-shadow: 0px 2px 10px 4px white;
+		tr {
+			background-color: #e8e8e8;
+			padding: 15px 25px;
+			display: block;
+			padding-left: 10px;
+			padding-right: 10px;
+			/*margin: 0 0 10px 0;*/
+			text-align: center;
+			border-radius: 6px; 
+			margin-bottom: 10px;
 		}
-		.gallery img:hover {
-			box-shadow: 0px 2px 10px 10px #bababa;
-			transition: 0.2s;
+		tr a {
+			text-decoration: none;
+			color: black;
+		}
+		tr a:hover {
+			border-bottom: 1px dotted #333;
+			color: #333;
+		}
+		.table .photo {
+			background-color: #f8f8f8;
+			color: #333;
+		}
+		.table tr:hover {
+			/*background-color: #333;
+			color: white;*/
+			/*transition: 0.25s;*/
 			cursor: pointer;
 		}
-		.g_box {
-			background-color: #ffffff;
-			max-width: 100%;
-			text-align: center;
+		.table tr .last {
+			margin:0px;
 		}
-		.btn {
-			border-radius: 4px;
-			border: 0px solid #333;
-			font-size: 20px;
-			padding: 5px 10px;
-			margin: 0 3px;
+		.img_photo img {
+			border-radius: 6px;
+			border: 0px;
+			height: auto;
+			width: 20%;
+
 		}
+		.card {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		  max-width: 350px;
+		  margin: auto;
+		  text-align: center;
+		  font-family: arial;
+		  display: inline-block;
+		  margin: 0 10px 0 10px;
+		}
+
+		.title {
+		  color: grey;
+		  font-size: 18px;
+		}
+
+		button {
+		  border: none;
+		  outline: 0;
+		  display: inline-block;
+		  padding: 8px;
+		  color: white;
+		  background-color: #000;
+		  text-align: center;
+		  cursor: pointer;
+		  width: 100%;
+		  font-size: 18px;
+		}
+
+		a {
+		  text-decoration: none;
+		  font-size: 22px;
+		  color: black;
+		}
+
+		button:hover, a:hover {
+		  opacity: 0.7;
+		}
+		h1 {
+			margin: 20px 0;
+		}
+
 		.ul{
 		background-color: #333;
 		color: white;
@@ -182,92 +264,12 @@
 	.nav ul li{
 		width: 25%;
 	}
-	</style>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
+</style>
 
-			$("#id1").show();
-			$("#id2").show();
-			$("#id3").show();
-
-			$("#b1").click(function(){
-				$("#id1").show(300);
-				$("#id2").show(300);
-				$("#id3").show(300);
-				$("#id4").hide(300);
-				$("#id5").hide(300);
-				$("#id6").hide(300);
-				$("#id7").show(300);
-				$("#id8").show(300);
-				$("#id9").show(300);
-				$("#id10").hide(300);
-				$("#id11").hide(300);
-				$("#id12").hide(300);
-				$("#id13").show(300);
-				$("#id14").show(300);
-				$("#id15").show(300);
-			});
-
-			$("#b2").click(function(){
-				$("#id1").hide(300);
-				$("#id2").hide(300);
-				$("#id3").hide(300);
-				$("#id4").show(300);
-				$("#id5").show(300);
-				$("#id6").show(300);
-				$("#id7").hide(300);
-				$("#id8").hide(300);
-				$("#id9").hide(300);
-				$("#id10").show(300);
-				$("#id11").show(300);
-				$("#id12").show(300);
-				$("#id13").hide(300);
-				$("#id14").hide(300);
-				$("#id15").hide(300);
-			});
-
-			$("#b3").click(function(){
-				$("#id1").hide(300);
-				$("#id2").hide(300);
-				$("#id3").hide(300);
-				$("#id4").hide(300);
-				$("#id5").hide(300);
-				$("#id6").hide(300);
-				$("#id7").show(300);
-				$("#id8").show(300);
-				$("#id9").show(300);
-				$("#id10").show(300);
-				$("#id11").show(300);
-				$("#id12").show(300);
-				$("#id13").hide(300);
-				$("#id14").hide(300);
-				$("#id15").hide(300);
-			});
-
-			$("#b4").click(function(){
-				$("#id3").show(300);
-				$("#id1").show(300);
-				$("#id2").show(300);
-				$("#id4").show(300);
-				$("#id5").show(300);
-				$("#id6").show(300);
-				$("#id7").show(300);
-				$("#id8").show(300);
-				$("#id9").show(300);
-				$("#id10").show(300);
-				$("#id11").show(300);
-				$("#id12").show(300);
-				$("#id13").show(300);
-				$("#id14").show(300);
-				$("#id15").show(300);
-			});
-
-
-		})
-	</script>
 </head>
-<body  style="font-family: Segoe UI">
+
+
+<body style="font-family: Segoe UI">
 
 <nav class="navbar navbar-inverse navbar-fixed-top" style="padding: 5px 0px;z-index: 1001">
   <div class="container-fluid">
@@ -281,12 +283,13 @@
     </div>
     <div class="collapse navbar-collapse nav nav-justified" id="myNavbar">
     	<!-- <img src="VITAAlogo.png" style="width:7%;position:absolute;left:49%"> -->
-      <ul class="nav navbar-nav" style="font-size: 22px;padding: 5px 5px;width: 100%;text-align: center;" >
+      <ul class="nav navbar-nav" style="font-size: 18px;padding: 5px 5px;width: 100%;text-align: center;" >
 		
 		<li><a href="index.html" style="color: white;padding: 10px 30px;">Home</a></li>
-        <li><a href="about-2-header.html" style="color: white;padding: 10px 30px;">About Us</a></li>
+		<li><a href="about-2-header.html" style="color: white;padding: 10px 30px;">About Us</a></li>
         <li><a href="chapter.html" style="color: white;padding: 10px 30px;">Chapters</a></li>
         <li><a href="activity.html" style="color: white;padding: 10px 30px;">Activity</a></li>
+        <!-- <li><a href="office_bearers.html" style="color: white;padding: 10px 30px;">Office Bearers</a></li> -->
 		<img src="VITAAlogo.png" style="width:7%;position:absolute;left: 46%">
 	</ul>
 	
@@ -305,35 +308,37 @@
   <div class="btn-group btn-group-justified">
     <div class="btn-group">
     	<a href="News.html">
-      		<button type="button" class="btn btn-primary" style="font-size:14px;background-color: black;border: 1px solid black;">News</button>
+      		<button type="button" class="btn btn-primary" style="background-color: black;border: 1px solid black;">News</button>
     	</a>
     </div>
     <div class="btn-group">
     	<a href="Gallery.html">
-      		<button type="button" class="btn btn-primary" style="font-size:14px;background-color: black;border: 1px solid black;">Gallery</button>
+      		<button type="button" class="btn btn-primary" style="background-color: black;border: 1px solid black;">Gallery</button>
       	</a>
     </div>
     <div class="btn-group">
     	<a href="office_bearers.html">
-      		<button type="button" id="btn1" class="btn btn-primary" style="font-size:14px;background-color: black;border: 1px solid black;">Office Bearers</button>
+      		<button type="button" id="btn1" class="btn btn-primary" style="background-color: black;border: 1px solid black;">Office Bearers</button>
   		</a>
     </div>
     <div class="btn-group">
     	<a href="contact-2.html">
-      		<button type="button" class="btn btn-primary" style="font-size:14px;background-color: black;border: 1px solid black;">Contact Us</button>
+      		<button type="button" class="btn btn-primary" style="background-color: black;border: 1px solid black;">Contact Us</button>
       	</a>
     </div>
   </div>
 </div>
+
 <!-- <div>
 	<div class="ul" style="background-color: transparent;width:100%;height:150px;margin:0px;padding: 0px 0px 10px 0px;position: fixed;">
+
 		<img src="VITAAlogo.png" style="width:7%;position:absolute;left:49.7%">
+
 		<div style="width:100%;background-color: #333;margin:0px; padding: 0 0 10px 0">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about-2-header.html">About Us</a></li>
 			<li><a href="chapter.html">Chapters</a></li>
-			<li><a href="activity.html">Activity</a></li>
-			<li><a href="#" style="width:100px"> </a></li>
+			<li><a href="activity.html">Activity</a></li>			
 			<li><a href="Gallery.html">Gallery</a></li>
 			<li><a href="office_bearers.html">Office Bearers</a></li>
 			<li><a href="contact-2.html">Contact Us</a></li> 
@@ -343,140 +348,82 @@
 		<li style="float: right;"><a href="#">Carrer</a></li>
 		<li style="float: right;"><a href="#">Office Bearers</a></li>
 		<li style="float: right;"><a href="#">Gallery</a></li> -->
-<!-- 	</div>	
+	<!-- </div>	
 </div> -->
+<br><br><br>
+<div id="main-content" class="edge-padding" style="padding-top: 0;margin-top: 0;">
+ 
 
-
-<BR><BR><BR>
-	<center>
-
-<!-- <h1>VITAA GALLERY</h1> -->
-
-
-<!-- <div class="g_box">
-<BR>
-	
-	
-	<div class="gallery_box">
-		<center>
-		<div class="gallery" id="id1">
-			<img src="assets/img/f1.jpeg">
-		</div>
-		<div class="gallery" id="id2">
-			<img src="assets/img/cc1.jpg">
-		</div>
-		<div class="gallery" id="id3">
-			<img src="assets/img/ny2.jpg">
-		</div>
-		<div class="gallery" id="id4">
-			<img src="assets/img/ny.jpg">
-		</div>
-		<div class="gallery" id="id5">
-			<img src="assets/img/mch3.jpg">
-		</div>
-		<div class="gallery" id="id6">
-			<img src="assets/img/slider3.jpg">
-		</div>
-		<div class="gallery" id="id7">
-			<img src="assets/img/vitaa2.png">
-		</div>
-		<div class="gallery" id="id8">
-			<img src="assets/img/cc2.jpg">
-		</div>
-		<div class="gallery" id="id9">
-			<img src="assets/img/vitaa11.png">
-		</div>
-		<div class="gallery" id="id10">
-			<img src="assets/img/slider2.jpg">
-		</div>
-		<div class="gallery" id="id11">
-			<img src="assets/img/la.jpg">
-		</div>
-		<div class="gallery" id="id12">
-			<img src="assets/img/california.jpg">
-		</div>
-		<div class="gallery" id="id12">
-			<img src="assets/img/vitaa5.png">
-		</div>
-		<div class="gallery" id="id12">
-			<img src="assets/img/vit6.png">
-		</div>
-		<div class="gallery" id="id12">
-			<img src="assets/img/vitaa7.jpg">
-		</div>
-		</center>
-	</div>
-
-</div> -->
-
-<br><br>
-
-<div>
-		<input type="button" name="btn1" value="Inauguration" id="b1" class="btn">
-		<input type="button" name="btn2" value="Meeting" id="b2" class="btn">
-		<input type="button" name="btn3" value="Group Snaps" id="b3" class="btn">
-		<input type="button" name="btn3" value="All" id="b4" class="btn">
+    <section class="page-header" style="background-image:url('assets/img/office_bearer.jpg');background-repeat: no-repeat;background-size: 100% 100%;width: 100%;height: 100%">
+        <div class="page-head-inside">
+            <!--  <div class="container">
+                <h1 class="font-reg">About</h1>
+                <p class="font-reg">Find out everything about us</p>
+            </div>  -->
+        </div>
+    </section>
 </div>
 <br>
-<table class="g_box">
-	<tr>
-		<td class="gallery" id="id1">
-			<img src="assets/img/f1.jpeg">
-		</td>
-		<td class="gallery" id="id2">
-			<img src="assets/img/cc1.jpg">
-		</td>
-		<td class="gallery" id="id3">
-			<img src="assets/img/ny2.jpg">
-		</td>
-	</tr>
-	<tr>
-		<td class="gallery" id="id4">
-			<img src="assets/img/slider3.jpg">
-		</td>
-		<td class="gallery" id="id5">
-			<img src="assets/img/mch3.jpg">
-		</td>
-		<td class="gallery" id="id6">
-			<img src="assets/img/ff.jpg">
-		</td>
-	</tr>
-	<tr>
-		<td class="gallery" id="id7">
-			<img src="assets/img/aa.jpg">
-		</td>
-		<td class="gallery" id="id8">
-			<img src="assets/img/cc2.jpg">
-		</td>
-		<td class="gallery" id="id9">
-			<img src="assets/img/gg.jpg">
-		</td>
-	</tr>
-	<tr>	
-		<td class="gallery" id="id10">
-			<img src="assets/img/hh.jpg">
-		</td>
-		<td class="gallery" id="id11">
-			<img src="assets/img/la.jpg">
-		</td>
-		<td class="gallery" id="id12">
-			<img src="assets/img/california.jpg">
-		</td>
-	</tr>
-	<tr>
-		<td class="gallery" id="id13">
-			<img src="assets/img/vitaa5.png">
-		</td>
-		<td class="gallery" id="id14">
-			<img src="assets/img/ii.jpg">
-		</td>
-		<td class="gallery" id="id15">
-			<img src="assets/img/vitaa7.jpg">
-		</td>
-	</tr>
-</table>
 
-</center>
+<center>
+	<br><br>
+	<h1>
+		VITAA - Web Development Team
+	</h1>
+	
+	<br>
+
+<div style="background-color: #333;padding: 90px 0 100px 0;">
+	<div class="card" style="box-shadow: 0px 2px 10px 4px #aaaaaa;margin-right: 15px;background-color: white">
+		<img src="assets/img/Prof. Christy Jackson J.jpg" style="width:300px;height: 350px;" alt="Aditya Mehta" title="Aditya Mehta">
+		<h1>Prof. Christy Jackson</h1>
+		<!-- <p class="title">Qualification + year</p>
+		<p>Harvard University</p>
+		<div style="margin: 20px 0;">
+		    <a href="#"><i class="fa fa-dribbble"></i></a>
+		    <a href="#"><i class="fa fa-twitter"></i></a>
+		    <a href="#"><i class="fa fa-linkedin"></i></a>
+		    <a href="#"><i class="fa fa-facebook"></i></a>
+		</div> -->
+ 		<p>
+ 			<a href="mailto:christyjackson.j@vit.ac.in"><button>Contact</button></a>
+ 		</p>
+	</div>
+
+	<div class="card" style="box-shadow: 0px 2px 10px 4px #aaaaaa;margin-right: 15px;background-color: white">
+		<img src="assets/img/web2.jpeg" style="width:300px;height: 350px;" alt="Ravi Raj" title="Ravi Raj">
+		<h1>Dr. Maheshwari R</h1>
+		<!-- <p class="title">CEO & Founder, Example</p>
+		<p>Harvard University</p>
+		<div style="margin: 20px 0;">
+		    <a href="#"><i class="fa fa-dribbble"></i></a>
+		    <a href="#"><i class="fa fa-twitter"></i></a>
+		    <a href="#"><i class="fa fa-linkedin"></i></a> 
+		    <a href="#"><i class="fa fa-facebook"></i></a>
+		</div> -->
+ 		<p>
+ 			<a href="#"><button>Contact</button></a>
+ 		</p>
+	</div>
+
+	<div class="card" style="box-shadow: 0px 2px 10px 4px #aaaaaa;background-color: white;margin:15px;">
+		<img src="assets/img/Chirag2.jpeg" style="width:300px;height: 350px;">
+		<h1>Chirag Sharma</h1>
+		<!-- <p class="title">B.E. Mechanical Engg 1996</p>
+		<p>Harvard University</p>
+		<div style="margin: 20px 0;">
+		    <a href="#"><i class="fa fa-dribbble"></i></a> 
+		    <a href="#"><i class="fa fa-twitter"></i></a>  
+		    <a href="#"><i class="fa fa-linkedin"></i></a>  
+		    <a href="#"><i class="fa fa-facebook"></i></a> 
+		</div> -->
+ 		<p>
+ 			<a href="mailto:chiragsharmaindian@gmail.com"><button>Contact</button></a>
+ 		</p>
+	</div>
+</div>
+	<br><br>
+	<br><br>
 
 <footer>
 
